@@ -1,3 +1,5 @@
 spring-state-machine/target/*
 spring/target/*
 *.class
+.idea/*
+*.iml
