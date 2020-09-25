@@ -50,9 +50,6 @@ public class User {
         this.money = money;
     }
 
-
-
-
     @Override
     public String toString() {
         return "User{" +
@@ -60,6 +57,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", money=" + money +
+                ", roles=" + roles +
                 '}';
     }
 }

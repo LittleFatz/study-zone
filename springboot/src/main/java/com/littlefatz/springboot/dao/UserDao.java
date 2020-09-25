@@ -31,6 +31,17 @@ public interface UserDao {
     @SelectProvider(type=UserDaoProvider.class, method="findByNotNullField")
     List<User> findByNotNullField(User user);
 
+    @Select("select * from user where id=#{id}")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "name", column = "name"),
+            @Result(property = "age", column = "age"),
+            @Result(property = "money", column = "money"),
+            @Result(property = "roles", column = "id",
+                    javaType = List.class, many = @Many(select = "com.littlefatz.springboot.dao.RoleDao.findByUserId"))
+    })
+    List<User> findUserAndRole(int id);
+
     class UserDaoProvider {
 
         public String findByNotNullField(User user) {

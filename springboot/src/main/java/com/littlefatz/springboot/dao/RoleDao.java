@@ -16,5 +16,6 @@ public interface RoleDao {
     @Select("select * from role")
     List<Role> findAll();
 
-
+    @Select("select * from role r, user_role ur where r.id=ur.role_id and ur.user_id=#{id}")
+    List<Role> findByUserId(int id);
 }
