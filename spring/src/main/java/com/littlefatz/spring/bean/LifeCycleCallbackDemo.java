@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 
 @Configuration
-public class LifeCycleCallbackDemo  {
+public class LifeCycleCallbackDemo {
 
     public static void main(String[] args) {
 

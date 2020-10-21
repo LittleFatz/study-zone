@@ -11,7 +11,7 @@ public class OrderGuard implements Guard<String, String> {
         Order order = (Order) stateContext.getMessageHeader(Constant.entityHeader);
 //        stateContext.get
         System.out.println("~~~~~~~~~~guard:" + order.getName());
-        if (order.getValue() < 100){
+        if (order.getValue() < 100) {
             System.out.println("too cheap");
 //            throw new RuntimeException("guard");
 //            stateContext.getStateMachine().sendEvent("error");

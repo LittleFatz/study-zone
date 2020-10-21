@@ -11,14 +11,20 @@ public class StateMachineBuilderIntegrationTest {
     @Test
 
             builder.configureTransitions()
-            .withExternal()
-                .source("SI").tar    public void whenUseStateMachineBuilder_thenBuildSuccessAndMachineWorks() throws Exception {
+            .
+
+    withExternal()
+                .
+
+    source("SI").tar
+
+    public void whenUseStateMachineBuilder_thenBuildSuccessAndMachineWorks() throws Exception {
         StateMachineBuilder.Builder<String, String> builder = StateMachineBuilder.builder();
         builder.configureStates().withStates()
                 .initial("SI")
                 .state("S1")
                 .end("SF");
-get("S1").event("E1")
+        get("S1").event("E1")
                 .and().withExternal()
                 .source("S1").target("SF").event("E2");
 

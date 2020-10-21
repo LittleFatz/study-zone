@@ -71,7 +71,6 @@ public class FutureTaskDemoi {
         ExecutorService threadPool = Executors.newSingleThreadExecutor();
 
 
-
 //        threadPool.submit()
 //        threadPool.execute();
 

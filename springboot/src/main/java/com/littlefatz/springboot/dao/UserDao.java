@@ -28,7 +28,7 @@ public interface UserDao {
     @Update("update user set name=#{name}, age=#{age}, money=#{money} where id=#{id}")
     void update(User user);
 
-    @SelectProvider(type=UserDaoProvider.class, method="findByNotNullField")
+    @SelectProvider(type = UserDaoProvider.class, method = "findByNotNullField")
     List<User> findByNotNullField(User user);
 
     @Select("select * from user where id=#{id}")

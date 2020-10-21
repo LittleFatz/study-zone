@@ -5,7 +5,7 @@ public enum Singleton {
 
     private int value;
 
-    Singleton (int value) {
+    Singleton(int value) {
         this.value = value;
         System.out.println("singleton");
     }

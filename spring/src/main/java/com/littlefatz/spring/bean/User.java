@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
 
-public class User implements InitializingBean  {
+public class User implements InitializingBean {
 
     private String username;
     private int age;
@@ -33,7 +33,6 @@ public class User implements InitializingBean  {
     public User() {
         System.out.println("normal construct");
     }
-
 
 
     public void print() {
