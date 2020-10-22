@@ -14,4 +14,8 @@ public class DubboDemoService {
     public String callProvider() {
         return helloService.hello("from consumer");
     }
+
+//    public String callProvider() {
+//        return "ok";
+//    }
 }
