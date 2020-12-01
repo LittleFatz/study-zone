@@ -1,0 +1,2 @@
+boy=com.littlefatz.dubboprovider.service.BoyHelloService
+girl=com.littlefatz.dubboprovider.service.GirlHelloService
