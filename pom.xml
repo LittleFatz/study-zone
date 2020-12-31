@@ -27,6 +27,8 @@
         <module>dubbo-spi</module>
         <module>dubbo-filter</module>
         <module>netty</module>
+        <module>spring-boot-nacos-order</module>
+        <module>spring-boot-nacos-stock</module>
     </modules>
 
 </project>
