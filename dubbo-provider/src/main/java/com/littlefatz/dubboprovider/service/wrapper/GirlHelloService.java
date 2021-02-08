@@ -1,20 +1,19 @@
-package com.littlefatz.dubboprovider.service;
+package com.littlefatz.dubboprovider.service.wrapper;
 
 import com.littlefatz.dubbo.api.service.HelloService;
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.apache.dubbo.config.annotation.Service;
 
 @DubboService(version = "1.0.0")
-public class BoyHelloService implements HelloService {
+public class GirlHelloService implements HelloService {
 
     @Override
     public String hello(String message) {
-        return "boy: " + message;
+        return "girl: " + message;
     }
 
     @Override
     public String hello(String message, URL url) {
-        return "boy: " + message;
+        return "girl: " + message;
     }
 }

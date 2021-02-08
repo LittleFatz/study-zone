@@ -10,15 +10,34 @@ public class ActivateDemo {
 
     public static void main(String[] args) {
         ActivateDemo demo = new ActivateDemo();
-        demo.testGroup();
+        demo.testGroupAndKey();
     }
 
-    public void testGroup() {
+    public void testGroupAndKey() {
         ExtensionLoader<EchoService> loader = ExtensionLoader.getExtensionLoader(EchoService.class);
         URL url = URL.valueOf("test://localhost/test");
 
-        List<EchoService> list = loader.getActivateExtension(url, new String[]{}, "animal");
+        List<EchoService> list = loader.getActivateExtension(url, new String[]{"lion"}, "animal");
+
         System.out.println(list.size());
+
+        for (EchoService service : list) {
+            service.echo("hi");
+        }
+
+    }
+
+    public void testKey() {
+        ExtensionLoader<EchoService> loader = ExtensionLoader.getExtensionLoader(EchoService.class);
+        URL url = URL.valueOf("test://localhost/test");
+
+        List<EchoService> list = loader.getActivateExtension(url, new String[]{"lion"}, "animal");
+
+        System.out.println(list.size());
+
+        for (EchoService service : list) {
+            service.echo("hi");
+        }
 
     }
 }

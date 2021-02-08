@@ -1,2 +1,2 @@
-wolf=com.littlefatz.dubboprovider.service.WolfEchoService
-lion=com.littlefatz.dubboprovider.service.LionEchoService
+wolf=com.littlefatz.dubboprovider.service.activate.WolfEchoService
+lion=com.littlefatz.dubboprovider.service.activate.LionEchoService

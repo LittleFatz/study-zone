@@ -1,4 +1,4 @@
-package com.littlefatz.dubboprovider.service;
+package com.littlefatz.dubboprovider.service.wrapper;
 
 import com.littlefatz.dubbo.api.service.HelloService;
 import org.apache.dubbo.common.URL;

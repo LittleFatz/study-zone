@@ -1,9 +1,9 @@
-package com.littlefatz.dubboprovider.service;
+package com.littlefatz.dubboprovider.service.activate;
 
 import com.littlefatz.dubbo.api.service.EchoService;
 import org.apache.dubbo.common.extension.Activate;
 
-@Activate(group = {"animal"},value = "wolf-animal")
+@Activate(group = {"animal"},value = "wolf")
 public class WolfEchoService implements EchoService {
 
     @Override
