@@ -10,5 +10,7 @@ public class AdaptiveDemo {
         URL url = URL.valueOf("test://localhost/hello?hello.service=girl");
         final HelloService adaptiveExtension = ExtensionLoader.getExtensionLoader(HelloService.class).getAdaptiveExtension();
         System.out.println(adaptiveExtension.hello("hello there", url));
+
+        ExtensionLoader.getExtensionLoader(HelloService.class).getExtension("bot");
     }
 }

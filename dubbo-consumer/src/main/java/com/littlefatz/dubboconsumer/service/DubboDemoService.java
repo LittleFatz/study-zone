@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class DubboDemoService {
 
-    @DubboReference(version = "1.0.0")
+    @DubboReference(version = "1.0.0",check = false)
     private HelloService helloService;
 
     public String callProvider() {
