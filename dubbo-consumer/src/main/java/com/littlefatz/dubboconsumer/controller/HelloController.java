@@ -15,6 +15,7 @@ public class HelloController {
     @Autowired
     private DubboDemoService dubboDemoService;
 
+    //http://127.0.0.1:8881/consumer/hello/print
     @RequestMapping(method = RequestMethod.GET, path = "/print")
     @ResponseBody
     public String hello() {
