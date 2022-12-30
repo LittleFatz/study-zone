@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.littlefatz.spring.bean.User" scope="singleton">
+    <bean id="user" class="com.littlefatz.application.spring.bean.User" scope="singleton">
         <property name="age" value="30"/>
         <property name="username" value="Aden"/>
     </bean>
 
-    <bean id="vehicle" class="com.littlefatz.spring.bean.Vehicle" scope="prototype">
+    <bean id="vehicle" class="com.littlefatz.application.spring.bean.Vehicle" scope="prototype">
         <property name="brand" value="Lexus"/>
         <property name="price" value="100"/>
     </bean>

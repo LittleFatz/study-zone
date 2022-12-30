@@ -29,6 +29,9 @@
         <module>netty</module>
         <module>spring-boot-nacos-order</module>
         <module>spring-boot-nacos-stock</module>
+        <module>GameApplication</module>
+        <module>GameBiz</module>
+        <module>GameService</module>
     </modules>
 
 </project>

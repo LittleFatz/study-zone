@@ -1,0 +1,2 @@
+wolf=com.littlefatz.application.dubboprovider.service.activate.WolfEchoService
+lion=com.littlefatz.application.dubboprovider.service.activate.LionEchoService

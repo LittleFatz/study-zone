@@ -1,3 +1,0 @@
-boy=com.littlefatz.dubboprovider.service.wrapper.BoyHelloService
-girl=com.littlefatz.dubboprovider.service.wrapper.GirlHelloService
-wrapper=com.littlefatz.dubboprovider.service.wrapper.HelloServiceWrapper
