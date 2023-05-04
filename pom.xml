@@ -32,6 +32,7 @@
         <module>GameApplication</module>
         <module>GameBiz</module>
         <module>GameService</module>
+        <module>netty-server-pt</module>
     </modules>
 
 </project>
