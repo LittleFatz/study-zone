@@ -33,6 +33,7 @@
         <module>GameBiz</module>
         <module>GameService</module>
         <module>netty-server-pt</module>
+        <module>springboot2</module>
     </modules>
 
 </project>

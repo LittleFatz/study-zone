@@ -17,8 +17,8 @@ public class HelloController {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+//    @Autowired
+//    private RedisTemplate<String, Object> redisTemplate;
 
     private final String BITMAP_KEY = "bitmap_test";
 
@@ -42,34 +42,34 @@ public class HelloController {
         return "done";
     }
 
-
-    @RequestMapping(method = RequestMethod.POST, path = "/setbit/{position}")
-    @ResponseBody
-    public boolean setBitMap(@PathVariable int position) {
-        redisTemplate.opsForValue().setBit(BITMAP_KEY, position, true);
-        return true;
-    }
-
-    @RequestMapping(method = RequestMethod.GET, path = "/getbit")
-    @ResponseBody
-    public String getRedis() {
-
-        String execute = redisTemplate.execute((RedisCallback<String>) conn -> {
-            byte[] bytes = conn.get(BITMAP_KEY.getBytes());
-            String s = convertByteArraysToBinary(bytes);
-            System.out.println(s);
-            return s;
-        });
-
-
-//        redisTemplate.opsForValue().getRedis
-//        redisTemplate.opsForValue().bit
-//        String o = (String) redisTemplate.opsForValue().get(BITMAP_KEY);
-//        byte[] bytes = o.getBytes();
-//        String s = convertByteArraysToBinary(bytes);
-//        System.out.println(s);
-        return execute;
-    }
+//
+//    @RequestMapping(method = RequestMethod.POST, path = "/setbit/{position}")
+//    @ResponseBody
+//    public boolean setBitMap(@PathVariable int position) {
+//        redisTemplate.opsForValue().setBit(BITMAP_KEY, position, true);
+//        return true;
+//    }
+//
+//    @RequestMapping(method = RequestMethod.GET, path = "/getbit")
+//    @ResponseBody
+//    public String getRedis() {
+//
+//        String execute = redisTemplate.execute((RedisCallback<String>) conn -> {
+//            byte[] bytes = conn.get(BITMAP_KEY.getBytes());
+//            String s = convertByteArraysToBinary(bytes);
+//            System.out.println(s);
+//            return s;
+//        });
+//
+//
+////        redisTemplate.opsForValue().getRedis
+////        redisTemplate.opsForValue().bit
+////        String o = (String) redisTemplate.opsForValue().get(BITMAP_KEY);
+////        byte[] bytes = o.getBytes();
+////        String s = convertByteArraysToBinary(bytes);
+////        System.out.println(s);
+//        return execute;
+//    }
 
     public static String convertByteArraysToBinary(byte[] input) {
         final StringBuilder result = new StringBuilder();
