@@ -1,4 +1,4 @@
-package org.example;
+package com.littlefatz.test;
 
 public class TestA {
 
